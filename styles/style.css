@@ -1,7 +1,7 @@
 html {
     font-size: 10px;
     font-family: 'Open Sans',sans-serif;
-    background-color: #00539F;
+    background-color: #979797;
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
     text-align: center;
     margin: 0;
     padding: 20px 0;
-    color: #00539F;
+    color: #b95e5e;
     text-shadow: 3px 3px 1px black;
 }
 
@@ -21,7 +21,7 @@ img {
 body {
     width: 600px;
     margin: 0 auto;
-    background-color: #FF9500;
+    background-color: #fcfcfca4;
     padding: 0 20px 20px 20px;
     border: 5px solid black;
 }
