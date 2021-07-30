@@ -31,3 +31,11 @@ p, li {
     line-height: 2;
     letter-spacing: 1px;
 }
+
+.popular {
+    border: 4px dotted #b95e5e;
+
+}
+#heading {
+    color: rgb(0, 102, 255);
+}
