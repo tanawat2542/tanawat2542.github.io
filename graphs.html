@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="styles/styleProject.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+
+<!-- Navigation Bar -->
+<nav class="navBar">
+    <div class="headBar">
+        <a class="headBarItem" href="#test">Thailand Covid-19 Statistics</a>
+    </div>
+    <div class="hover">
+        <a class="hoverItem" href="#main">หน้าหลัก</a>
+        <a class="hoverItem" href="#graphs">กราฟ</a>
+        <a class="hoverItem" href="#comparison">เปรียบเทียบยอดผู้ติดเชื้อ</a>
+    </div>
+
+    <div class="imgIconBox">
+        <img class="iconImg" src="images/thailand.png">
+        <a>|</a>
+        <img class="iconImg" src="images/united-kingdom.png">
+    </div>
+
+</nav>
+
+<!-- Detail -->
+<div class="main">
+    <div class="tableShowStatistics">
+        <h2>สถิติ</h2>
+        <div class="boxStatisticsToday">
+            <div class="showStatisticsToday">
+                <p class="textStatistics">ผู้ติดเชื้อใหม่</p>
+                <p class="textStatistics">+ 20,902</p>
+                <p class="textStatistics">ผู้ติดเชื้อยืนยันสะสม: 989,859</p>
+            </div>
+            <div class="showStatisticsToday">
+                <p class="textStatistics">ผู้เสียชีวิต</p>
+                <p class="textStatistics">+ 301</p>
+                <p class="textStatistics">ผู้เสียชีวิตยืนยันสะสม: 8,586</p>
+            </div>
+            <div class="showStatisticsToday">
+                <p class="textStatistics">เข้ารับการรักษา</p>
+                <p class="textStatistics">205,496</p>
+
+            </div>
+            <div class="showStatisticsToday">
+                <p class="textStatistics">หายป่วยแล้ว</p>
+                <p class="textStatistics">+ 22,208</p>
+                <p class="textStatistics"> หายป่วยสะสม: 775,327</p>
+            </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+    <div class="allTable">
+        <div class="mainTable">
+            <div class="tableShowGraphs1">
+                <h2 class="nameGraphs">กราฟ1</h2>
+                <canvas id="myChart" height="100" width="100"></canvas>
+            </div>
+            <div class="tableShowGraphs2">
+                <h2 class="nameGraphs">กราฟ2</h2>
+                <canvas id="myChart2" height="100" width="100"></canvas>
+            </div>
+            <div class="tableShowGraphs3">
+                <h2 class="nameGraphs">กราฟ3</h2>
+                <canvas height="100" width="100" id="myChart3"></canvas>
+            </div>
+            <div class="tableShowGraphs4">
+                <h2 class="nameGraphs">กราฟ4</h2>
+                <canvas height="100" width="100" id="myChart4"></canvas>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+<script src="./lib/graphs.js"></script>
+
+</html>

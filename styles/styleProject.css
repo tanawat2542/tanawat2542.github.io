@@ -1,0 +1,1020 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    height: auto;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #98DDCA;
+}
+
+.headBar,
+.hover,
+.imgIconBox {
+    color: #2d2d2d;
+    font-weight: bold;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.textStatistics {
+    margin: 8px 0 !important;
+}
+
+.hoverItem {
+    font-weight: bold;
+    color: #2d2d2d;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.imgIconBox {
+    margin-right: 18px;
+}
+
+.headBarItem {
+    color: #2d2d2d;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.headBarItem:hover {
+    text-decoration: none;
+    color: rgb(112, 0, 240);
+}
+
+.hoverItem:hover {
+    background-color: white;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(33, 82, 0);
+    opacity: 85%;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    padding: 20px 20px 490px 20px;
+}
+
+.allTable {
+    display: flex;
+    margin: 16px auto;
+    justify-content: center;
+}
+
+.iconImg {
+    width: 20px;
+}
+
+.tableShowStatistics {
+    background-color: #ffffff;
+    padding: 0 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.mainTable {
+    width: 1500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.boxStatisticsToday {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.showStatisticsToday {
+    max-width: 400px;
+    width: 100%;
+    height: 150px;
+    border: 2px solid red;
+    flex-direction: column;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.showStatisticsToday p {
+    text-align: center;
+}
+
+.tableShowGraphs1 {
+    margin: 0 16px;
+    width: 700px;
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 0 20px 20px 20px;
+    margin: 16px;
+    border-radius: 10px;
+}
+
+.tableShowGraphs2 {
+    margin: 0 16px;
+    width: 700px;
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 0 20px 20px 20px;
+    margin: 16px;
+    border-radius: 10px;
+}
+
+.tableShowGraphs3 {
+    margin: 0 16px;
+    width: 700px;
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 0 20px 20px 20px;
+    margin: 16px;
+    border-radius: 10px;
+}
+
+.tableShowGraphs4 {
+    margin: 0 16px;
+    width: 700px;
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 0 20px 20px 20px;
+    margin: 16px;
+    border-radius: 10px;
+}
+
+.nameGraphs {
+    margin: 16px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .navBar {
+        flex-direction: column;
+    }
+    .hover {
+        margin-right: 0in;
+        display: flex;
+        flex-direction: column;
+    }
+    .headBarItem {
+        margin-left: 0in;
+    }
+    .mainTable {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        height: 100%;
+    }
+    .tableShowGraphs1 {
+        width: 90%;
+        height: 90%;
+    }
+    .tableShowGraphs2 {
+        width: 90%;
+        height: 90%;
+    }
+    .tableShowGraphs3 {
+        width: 90%;
+        height: 90%;
+    }
+    .tableShowGraphs4 {
+        width: 90%;
+        height: 90%;
+    }
+    .boxStatisticsToday {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+    }
+    .showStatisticsToday {
+        font-size: 14px;
+        width: 90% !important;
+        height: 100px;
+    }
+    .textStatistics {
+        margin: 4px 0 !important;
+    }
+}
+
+/*============ main page ===============*/
+#covidHead,#comparisonHead {
+    text-align: center;
+    color: #3D3D3D;
+    font-size: 40px;
+    margin-top: 50px;
+}
+#date {
+    margin-top: 20px;
+    text-align: center;
+    color: #3D3D3D;
+    font-size: 20px;
+}
+
+#main_elements {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#control_plane {
+    display: flex;
+}
+
+#control_element1,#control_element2,#control_element3 {
+    display:inline;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#compare_plane {
+    display:flex;
+}
+
+#compare_elements_1 {
+    background-color: rgb(219, 219, 219);
+    display:inline;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-bottom: 50px;
+    align-items: center;
+    padding: 60px;
+    border-radius: 20px;
+}
+
+#compare_elements_2 {
+    background-color: rgb(219, 219, 219);
+    display:inline;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-bottom: 50px;
+    align-items: center;
+    padding: 60px;
+    border-radius: 20px;
+}
+
+#element1Cases,#element1Deaths,#element1Active,#element1Cured,#element2Cases,#element2Deaths,#element2Active,#element2Cured {
+    color: #ffffff;
+    width:max-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+#elementNumber{
+    text-align: center;
+    font-size: 30px;
+}
+
+#elements1CasesDetails,#elements2CasesDetails {
+    font-size: 20px;
+    padding: 20px;
+    min-width: 24vw;
+    border-radius: 15px;
+    background-color: #C72626;
+}
+
+#elements1DeathsDetails,#elements2DeathsDetails {
+    font-size: 20px;
+    padding: 20px;
+    min-width: 24vw;
+    border-radius: 15px;
+    background-color:  #595959;
+}
+
+#elements1CuredDetails,#elements2CuredDetails {
+    font-size: 20px;
+    padding: 20px;
+    min-width: 24vw;
+    border-radius: 15px;
+    background-color:  #87BE34;
+}
+
+#elements1ActiveDetails,#elements2ActiveDetails {
+    font-size: 20px;
+    padding: 20px;
+    min-width: 24vw;
+    border-radius: 15px;
+    background-color: #D99929;
+}
+
+#difference {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#differenceDetails {
+    background-color: gray;
+    margin-top: 10px; 
+    font-size: 25px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 15px;
+
+}
+
+#compare_box {
+    display:inline;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#compareTopHeader {
+    text-align: center;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#compareHeader {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#compareDetail {
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+#comparePercent {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#newCases {
+    color: #ffffff;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+#newDeaths {
+    color: #ffffff;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+#activeCases {
+    color: #000000;
+    width: fit-content;
+    margin: 0 auto;
+ 
+}
+#cured {
+    color: #000000;
+    width: fit-content;
+    margin: 0 auto;
+}
+.column {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#newCasesDetails {
+    background-color: #C72626;
+    margin-top: 80px;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+#newDeathsDetails {
+    background-color:  #595959;
+    margin-top: 10px;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 15px;
+}
+#activeCasesDetails {
+    background-color: #D99929;
+    margin-top: 10px; 
+    font-size: 25px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 15px;
+}
+#curedDetails {
+    background-color:  #87BE34;
+    margin-top: 30px; 
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+.sign {
+    width: 30%;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;   
+}
+#activeSign {
+    width: 30%;
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+#cureSign {
+    width: 40%;
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+#infectedNumber {
+    text-align: center;
+    font-size: 50px;
+}
+#deathNumber {
+    text-align: center;
+    font-size: 50px;
+}
+#activeNumber {
+    text-align: center;
+    font-size: 50px;
+}
+#cureNumber {
+    text-align: center;
+    font-size: 50px;
+}
+p:nth-child(1) {
+    text-align: center;
+}
+
+@media screen and (max-width: 1600px) {
+    .sign{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    } 
+    #main_elements {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .column {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sign {
+        width: 30%;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    #newCasesDetails {
+        margin-top: 80px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    
+    }
+    #newDeathsDetails {
+        background-color:  #595959;
+        margin-top: 35px;
+        font-size: 25px;
+        padding-top: 20px;
+        border-radius: 15px;
+    }
+    #activeCasesDetails {
+        background-color: #D99929;
+        margin-top: 30px; 
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .sign{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    } 
+    #main_elements {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-bottom: 10px;
+    }
+    .column {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sign {
+        width: 30%;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    #newCasesDetails {
+        margin-top: 65px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #activeCasesDetails {
+        margin-top: 20px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #newDeathsDetails {
+        margin-top: 35px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #curedDetails {
+        margin-top: 20px;
+        padding: 20px; 
+        font-size: 25px;
+        border-radius: 15px;
+        
+    }
+}
+    @media screen and (max-width: 1280px) {
+        .sign{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        } 
+        #main_elements {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto; 
+            margin-bottom: 10px;
+            padding-bottom: 50px;
+        }
+        .column {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .sign {
+            width: 30%;
+            display: block;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;   
+        }
+        #newCasesDetails {
+            margin-top: 65px;
+            font-size: 25px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        #activeCasesDetails {
+            margin-top: 10px;
+            font-size: 25px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        #newDeathsDetails {
+            margin-top: 35px;
+            font-size: 25px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        #curedDetails {
+            margin-top: 10px;
+            padding: 20px; 
+            font-size: 25px;
+            border-radius: 15px;
+            
+        }
+}
+
+@media screen and (max-width: 1024px) {
+    .navBar {
+        flex-direction: column;
+    }
+    .hover {
+        margin-right: 0in;
+        display: flex;
+        flex-direction: column;
+    }
+    .headBarItem {
+        margin-left: 0in;
+    }
+    .sign{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    } 
+    #main_elements {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        height: auto;
+        margin: 10px;
+        padding-bottom: 32rem;
+        
+    }
+    .column {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sign {
+        width: 30%;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    #newCasesDetails {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 55px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #activeCasesDetails {
+        margin-top: 10px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #newDeathsDetails {
+        margin-top: 35px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #curedDetails {
+        margin-top: 10px;
+        padding: 20px; 
+        font-size: 25px;
+        border-radius: 15px;
+        
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+    }
+    .hover {
+        margin-right: 0in;
+        display: flex;
+        flex-direction: column;
+    }
+    .headBarItem {
+        margin-left: 0in;
+    }
+    .sign{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    } 
+    #main_elements {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        align-items: center;
+        margin: 10px;
+        padding-bottom: 200px;
+        
+    }
+    .column {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sign {
+        width: 30%;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    #newCasesDetails {
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin-top: 55px;
+        font-size: 25px;
+        border-radius: 15px;
+    }
+    #activeCasesDetails {
+        margin-top: 10px;
+        font-size: 25px;
+        border-radius: 15px;
+    }
+    #newDeathsDetails {
+        margin-top: 35px;
+        font-size: 25px;
+        border-radius: 15px;
+    }
+    #curedDetails {
+        margin-top: 10px;
+        padding-bottom: -50px; 
+        font-size: 25px;
+        border-radius: 15px;
+        
+    }
+
+    #comparisonHead {
+        font-size: 20px;
+        margin-top:0;
+    }
+    #control_plane {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    #compare_plane{
+        margin: 0;
+        padding: 0;
+    }   
+
+    #compare_elements_1 {
+        margin:0;
+        padding:0;
+        padding-left: 5px;
+    }
+    
+    #compare_elements_2 {
+        margin:0;
+        padding:0;
+        padding-right: 5px;
+    }
+    
+    #element1Active,#element2Active {
+        margin:0;
+        padding:0;
+    }
+
+    #element1Cases,#element1Deaths,#element1Active,#element1Cured,#element2Cases,#element2Deaths,#element2Active,#element2Cured {
+        margin:0;
+        min-width: 30vw;
+    
+    }
+    #elementNumber{
+        font-size:  12px;
+    }
+    
+    #elements1CasesDetails,#elements2CasesDetails, #elements1DeathsDetails,#elements2DeathsDetails, #elements1CuredDetails,#elements2CuredDetails, #elements1ActiveDetails,#elements2ActiveDetails {
+        font-size:  12px;
+    }
+
+    
+    #compare_box {
+        margin-top: 0;
+        align-items: center;
+    }
+
+    #compareTopHeader {
+        font-size: 20px;
+    }
+    
+    #compareHeader {
+        font-size: 15px;
+    }
+    
+    #compareDetail {
+
+        font-size: 12px;
+    }
+    
+    #comparePercent {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .navBar {
+        flex-direction: column;
+    }
+    .hover {
+        margin-right: 0in;
+        display: flex;
+        flex-direction: column;
+    }
+    .headBarItem {
+        margin-left: 0in;
+    }
+    .sign{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    } 
+    #main_elements {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        align-items: center;
+        margin: 10px;
+        padding-bottom: 100px;
+        
+    }
+    .column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sign {
+        width: 30%;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    #newCasesDetails {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 55px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #activeCasesDetails {
+        margin-top: 20px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #newDeathsDetails {
+        margin-top: 35px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #curedDetails {
+        margin-top: 10px;
+        padding: 20px;
+        padding-bottom: -50px; 
+        font-size: 25px;
+        border-radius: 15px;
+        
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .navBar {
+        flex-direction: column;
+    }
+    .hover {
+        margin-right: 0in;
+        display: flex;
+        flex-direction: column;
+    }
+    .headBarItem {
+        margin-left: 0in;
+    }
+    .sign{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    } 
+    #main_elements {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        align-items: center;
+        margin: 10px;
+        padding-bottom: 100px;
+        
+    }
+    .column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sign {
+        width: 30%;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    #newCasesDetails {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 55px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #activeCasesDetails {
+        margin-top: 20px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #newDeathsDetails {
+        margin-top: 35px;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #curedDetails {
+        margin-top: 10px;
+        padding: 20px;
+        padding-bottom: -50px; 
+        font-size: 25px;
+        border-radius: 15px;
+        
+    }
+
+    #control_plane {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #province2{
+        align-items: center;
+    }
+    
+    #compare_plane{
+        margin: 0;
+        padding: 0;
+    }   
+
+    #compare_elements_1 {
+        margin:0;
+        padding:0;
+    }
+    
+    #compare_elements_2 {
+        margin:0;
+        padding:0;
+    }
+    
+    #element1Active,#element2Active {
+        margin:0;
+        padding:0;
+        border: 1px dashed white;
+    }
+
+    #element1Cases,#element1Deaths,#element1Active,#element1Cured,#element2Cases,#element2Deaths,#element2Active,#element2Cured {
+        margin:0;
+        min-width: 50vw;
+    
+    }
+    #elementNumber{
+        font-size:  10px;
+    }
+    
+    #elements1CasesDetails,#elements2CasesDetails, #elements1DeathsDetails,#elements2DeathsDetails, #elements1CuredDetails,#elements2CuredDetails, #elements1ActiveDetails,#elements2ActiveDetails {
+        font-size:  15x;
+    }
+
+    
+    #compare_box {
+        display: none;
+        align-items: center;
+    }
+    
+}
