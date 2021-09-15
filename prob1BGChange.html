@@ -42,7 +42,9 @@
                 }
             } else {
                 divs[i].onclick = function(e) {
-                    e.target.style.backgroundColor = 'rgb(' + 237 + ',' + 243 + ',' + 32 + ')';
+                    if (e.target.style.backgroundColor != 'rgb(237, 243, 32)') {
+                        e.target.style.backgroundColor = 'rgb(' + 237 + ',' + 243 + ',' + 32 + ')';
+                    }
                 }
             }
 
